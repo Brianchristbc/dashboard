@@ -8,6 +8,16 @@
   --cards: #f7ede5;
 }
 
+:root.dark {
+  --text: #ffffff;
+  --light-text: #cccccc;
+  --background: #1a1a1a;
+  --primary: #b86e08; 
+  --secondary: #e7700a; 
+  --accent: #fcdcbf;
+  --cards: #333333; 
+}
+
 body {
   margin: 0;
   font-size: 16px;
@@ -64,8 +74,6 @@ li img {
   margin-right: 10px;
 }
 
-
-
 div img {
   width: 50px;
 }
@@ -121,6 +129,7 @@ input {
   background-color: var(--background);
   border-radius: 15px;
   padding-left: 1rem;
+  color: var(--text);
 }
 
 .bottom-row {
@@ -164,6 +173,7 @@ button {
   padding: 0.6rem 2rem;
   border-radius: 1.4rem;
   font-size: 1.2rem;
+  color: var(--text);
 }
 
 .container {
@@ -226,6 +236,7 @@ button {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.323);
 }
 
+
 .container-right-column {
   grid-column: 3 / 4;
 }
@@ -277,9 +288,27 @@ button {
   font-size: 0.7rem;
 }
 
-.trending-card .jim{
+.trending-card .jim {
   padding-bottom: 1rem;
 }
 
 
+.title:active,
+li:active,
+button:active,
+.card:active,
+img:active {
+  transform: scale(0.98);
+  cursor: pointer;
+}
 
+.title:hover,
+li:hover,
+button:hover,
+.card:hover,
+img:hover,
+h3:hover,
+span:hover,
+.handle {
+  cursor: pointer;
+}
